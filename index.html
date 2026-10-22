@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Leno's Restaurant | Authentic Italian Eatery in Berea, KY</title>
+    <meta name="description" content="Papa Leno's in Berea, KY offers classic pizzas, scratch-made pasta, hot subs, salads, and fresh baked bread. Call (859) 986-4497 or visit us at 108 Center St.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Papa Leno's Restaurant - Berea, KY">
+    <meta property="og:description" content="A Taste of Italy and More! Famous pizzas, homemade breads, pastas, hot subs and more.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://www.papalenos.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Papa Leno's Restaurant",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "108 Center St",
+        "addressLocality": "Berea",
+        "addressRegion": "KY",
+        "postalCode": "40403",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.5683232,
+        "longitude": -84.2985338
+      },
+      "url": "https://www.papalenos.com",
+      "telephone": "+18599864497",
+      "priceRange": "$10-$20",
+      "servesCuisine": ["Italian", "Pizza", "Pasta", "Sub Sandwiches"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:00",
+          "closes": "21:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "161"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wine: {
+                            DEFAULT: '#7A1C1C',
+                            dark: '#581313',
+                            light: '#9E2828'
+                        },
+                        olive: {
+                            DEFAULT: '#2E5A36',
+                            dark: '#214227',
+                            light: '#3F784B'
+                        },
+                        amberGold: '#D4AF37',
+                        oat: '#FBF8F3',
+                        parchment: '#F3EDE2',
+                        cardBg: '#FFFFFF',
+                        charcoal: {
+                            900: '#1B1918',
+                            800: '#2A2725',
+                            700: '#423D3A',
+                            100: '#F0ECE6'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        script: ['Caveat', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .trattoria-pattern {
+            background-color: #FBF8F3;
+            background-image: radial-gradient(#e5ded2 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .signature-badge {
+            background: linear-gradient(135deg, #7A1C1C 0%, #581313 100%);
+            box-shadow: 0 2px 6px rgba(122, 28, 28, 0.3);
+        }
+        .gold-border-glow {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+        }
+        .tab-btn.active {
+            background-color: #7A1C1C;
+            color: #ffffff;
+            border-color: #7A1C1C;
+            box-shadow: 0 4px 12px rgba(122, 28, 28, 0.25);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F3EDE2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7A1C1C;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-oat text-charcoal-800 font-sans antialiased selection:bg-wine selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-wine text-oat text-xs sm:text-sm py-2 px-4 text-center font-medium flex justify-between items-center max-w-full overflow-hidden">
+        <div class="container mx-auto flex justify-center sm:justify-between items-center">
+            <span class="hidden sm:inline flex items-center gap-2">
+                <i class="fa-solid fa-wheat-awn text-amberGold"></i> "Bread" means fresh baked daily at Papa Leno's!
+            </span>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+                <a href="tel:+18599864497" class="hover:underline flex items-center gap-1.5 text-amberGold">
+                    <i class="fa-solid fa-phone"></i> (859) 986-4497
+                </a>
+                <span class="hidden md:inline text-white/40">•</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-amberGold mr-1"></i> 108 Center St, Berea, KY</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-oat/95 backdrop-blur-md border-b border-charcoal-900/10 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-full bg-wine flex items-center justify-center text-amberGold text-2xl font-bold font-serif shadow-md border-2 border-amberGold group-hover:scale-105 transition-transform">
+                        P
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-wine block leading-tight">
+                            Papa Leno's
+                        </span>
+                        <span class="text-[10px] text-olive font-bold tracking-widest uppercase block -mt-1">
+                            A Taste of Italy & More
+                        </span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-charcoal-700">
+                    <a href="#about" class="hover:text-wine transition-colors">About Us</a>
+                    <a href="#menu" class="hover:text-wine transition-colors">Full Menu</a>
+                    <a href="#reviews" class="hover:text-wine transition-colors">Reviews</a>
+                    <a href="#location" class="hover:text-wine transition-colors">Hours & Map</a>
+                </div>
+
+                <!-- CTA BUTTONS -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <button onclick="openModal()" class="px-4 py-2.5 rounded-lg bg-olive/10 text-olive hover:bg-olive hover:text-white font-bold text-xs uppercase tracking-wider transition-all border border-olive/30">
+                        Reserve Table
+                    </button>
+                    <a href="tel:+18599864497" class="px-5 py-2.5 rounded-lg bg-wine hover:bg-wine-dark text-white font-bold text-xs uppercase tracking-wider shadow-md transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Order
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal-800 hover:text-wine p-2 rounded-lg focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV MENU -->
+        <div class="hidden md:hidden bg-parchment border-b border-charcoal-900/10 px-4 pt-2 pb-6 space-y-3" id="mobile-menu">
+            <a href="#about" class="block py-2 text-charcoal-800 font-semibold hover:text-wine">About Us</a>
+            <a href="#menu" class="block py-2 text-charcoal-800 font-semibold hover:text-wine">Full Menu</a>
+            <a href="#reviews" class="block py-2 text-charcoal-800 font-semibold hover:text-wine">Reviews</a>
+            <a href="#location" class="block py-2 text-charcoal-800 font-semibold hover:text-wine">Hours & Map</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openModal()" class="w-full py-2.5 text-center rounded-lg bg-olive/10 text-olive border border-olive/30 font-bold text-sm">
+                    Reserve Table
+                </button>
+                <a href="tel:+18599864497" class="w-full py-2.5 text-center rounded-lg bg-wine text-white font-bold text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call to Order
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-charcoal-900">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80" alt="Papa Leno's Kitchen" class="w-full h-full object-cover object-center opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/70 to-charcoal-900/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-16">
+            <!-- Dynamic Open/Closed Status Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 shadow-xl">
+                <span id="status-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span id="status-text" class="text-xs font-bold tracking-wide uppercase text-white">Checking Hours...</span>
+                <span class="text-xs text-amberGold font-medium">| Closes 9:00 PM</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
+                A Taste of Italy <span class="text-amberGold italic font-script font-normal text-5xl sm:text-7xl md:text-8xl block mt-1">and More!</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed mb-8">
+                Famous pizzas, 100% whole cream mozzarella, scratch-made fresh bread daily, and rich family pasta in the heart of Berea College Square.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-wine hover:bg-wine-dark text-white font-bold text-sm tracking-wider uppercase shadow-xl transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-utensils mr-2"></i> Explore Menu
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=108+Center+St,+Berea,+KY+40403" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/15 hover:bg-white/25 text-white border border-white/30 font-bold text-sm tracking-wider uppercase backdrop-blur-sm transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-diamond-turn-right text-amberGold"></i> Get Directions
+                </a>
+            </div>
+
+            <!-- Rating Banner -->
+            <div class="mt-12 inline-flex items-center gap-3 px-5 py-2.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                <div class="flex text-amberGold text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="text-xs font-bold text-white">4.5 / 5.0 Rating</span>
+                <span class="text-xs text-gray-300">(161+ Google Reviews)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- KEY HIGHLIGHTS -->
+    <section class="py-12 bg-parchment border-b border-charcoal-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-5 rounded-2xl bg-white shadow-sm border border-charcoal-900/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-bread-slice text-3xl text-wine mb-3"></i>
+                    <h2 class="font-serif font-bold text-charcoal-900 text-base mb-1">Scratch-Made Bread</h2>
+                    <p class="text-xs text-charcoal-700">Baked fresh daily in-house for all subs & sandwiches</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white shadow-sm border border-charcoal-900/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-cheese text-3xl text-amberGold mb-3"></i>
+                    <h2 class="font-serif font-bold text-charcoal-900 text-base mb-1">100% Whole Cream</h2>
+                    <p class="text-xs text-charcoal-700">Premium gooey mozzarella on every single pizza</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white shadow-sm border border-charcoal-900/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-pizza-slice text-3xl text-wine mb-3"></i>
+                    <h2 class="font-serif font-bold text-charcoal-900 text-base mb-1">Italian-Style Crust</h2>
+                    <p class="text-xs text-charcoal-700">Made right before your eyes with secret recipe</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white shadow-sm border border-charcoal-900/5 hover:border-wine/30 transition-colors">
+                    <i class="fa-solid fa-leaf text-3xl text-olive mb-3"></i>
+                    <h2 class="font-serif font-bold text-charcoal-900 text-base mb-1">Dietary Options</h2>
+                    <p class="text-xs text-charcoal-700">Gluten-free cauliflower crust & veggie specials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-oat relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block px-3.5 py-1.5 rounded-full bg-wine/10 text-wine border border-wine/20 text-xs font-bold uppercase tracking-wider">
+                        Our Story & Tradition
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal-900 tracking-tight leading-snug">
+                        Papa Leno's is where the commonplace is not common.
+                    </h2>
+                    <p class="text-charcoal-700 leading-relaxed">
+                        Located at College Square in Berea, KY, Papa Leno's has been serving local families, college students, and visitors with traditional Italian recipes crafted with dedication and heart.
+                    </p>
+                    <ul class="space-y-3 text-sm text-charcoal-800 font-medium">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-olive text-base"></i>
+                            <span>Pizza crust made Italian-style right before your eyes</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-olive text-base"></i>
+                            <span>Savory and fresh homemade secret sauce blends</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-olive text-base"></i>
+                            <span>Sandwiches and subs brimming with delectable morsels</span>
+                        </li>
+                    </ul>
+                    <div class="p-5 rounded-2xl bg-parchment border-l-4 border-wine text-wine font-serif italic text-base shadow-sm">
+                        "Tradition for good food transcends the years, reaching back into the era of the original Papa Leno, whose feats are now legendary."
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80" alt="Fresh Baked Italian Pizza" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-charcoal-900/10 hidden sm:block max-w-xs">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-wine/10 text-wine flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div>
+                                <div class="text-charcoal-900 font-serif font-bold text-base">Scratch Kitchen</div>
+                                <div class="text-xs text-charcoal-700">Fresh daily ingredients</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MENU SECTION -->
+    <section id="menu" class="py-20 trattoria-pattern relative border-t border-charcoal-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- SECTION HEADER -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-wine text-xs font-bold uppercase tracking-widest block mb-2">Authentic Culinary Offerings</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal-900 mb-4">Our Full Menu</h2>
+                <p class="text-charcoal-700 text-sm sm:text-base">
+                    Explore our menu featuring scratch-made pizzas, hot subs, pasta dishes, and salads.
+                </p>
+                <div class="mt-4 flex items-center justify-center gap-2 text-xs font-semibold text-charcoal-800">
+                    <span class="px-2 py-0.5 rounded signature-badge text-white font-bold">P</span> = Papa Leno Signature Dishes
+                </div>
+            </div>
+
+            <!-- SEARCH & FILTER BAR -->
+            <div class="max-w-3xl mx-auto mb-10 space-y-4">
+                <!-- Search Input -->
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-charcoal-700"></i>
+                    <input type="text" id="menu-search" placeholder="Search menu items (e.g. Alfredo, Sub, Cauliflower, Lasagna)..." class="w-full bg-white border border-charcoal-900/15 rounded-xl pl-11 pr-4 py-3.5 text-sm text-charcoal-900 placeholder-charcoal-700 focus:outline-none focus:border-wine shadow-sm transition-colors">
+                </div>
+
+                <!-- CATEGORY TABS -->
+                <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-none justify-start md:justify-center text-xs font-semibold" id="category-tabs">
+                    <button onclick="filterCategory('all')" class="tab-btn active px-4 py-2.5 rounded-xl border border-charcoal-900/10 whitespace-nowrap transition-all">All Items</button>
+                    <button onclick="filterCategory('starters')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Starters</button>
+                    <button onclick="filterCategory('soups-salads')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Soups & Salads</button>
+                    <button onclick="filterCategory('hot-subs')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Hot Subs</button>
+                    <button onclick="filterCategory('grill')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Off The Grill</button>
+                    <button onclick="filterCategory('pizza')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Famous Pizza</button>
+                    <button onclick="filterCategory('pasta')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Pasta & More</button>
+                    <button onclick="filterCategory('kids')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Kids Menu</button>
+                    <button onclick="filterCategory('desserts-drinks')" class="tab-btn px-4 py-2.5 rounded-xl bg-white hover:bg-parchment text-charcoal-800 border border-charcoal-900/10 whitespace-nowrap transition-all shadow-sm">Desserts & Drinks</button>
+                </div>
+            </div>
+
+            <!-- MENU ITEMS CONTAINER -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="menu-container">
+                <!-- JavaScript Populated -->
+            </div>
+
+            <!-- NO RESULTS STATE -->
+            <div id="no-results" class="hidden text-center py-12">
+                <i class="fa-solid fa-utensils text-4xl text-charcoal-700/40 mb-3 block"></i>
+                <p class="text-charcoal-700 font-medium">No menu items found matching your search.</p>
+                <button onclick="resetMenuSearch()" class="mt-3 text-xs text-wine font-bold hover:underline">Reset Search</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section id="reviews" class="py-20 bg-parchment relative border-t border-charcoal-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-olive text-xs font-bold uppercase tracking-widest block mb-2">Guest Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal-900">What Our Guests Say</h2>
+                <p class="text-charcoal-700 text-sm mt-2">Rated 4.5/5 on Google Reviews & 4.7/5 on Facebook</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-charcoal-900/10 shadow-sm relative flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-charcoal-800 italic text-sm leading-relaxed mb-6">
+                            "Great place to grab a Meats-N-Meats pizza or some yummy baked pasta."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-charcoal-900/10">
+                        <div class="w-10 h-10 rounded-full bg-wine/10 text-wine flex items-center justify-center font-bold text-sm">
+                            G
+                        </div>
+                        <div>
+                            <div class="text-charcoal-900 text-sm font-bold">Local Foodie</div>
+                            <div class="text-xs text-charcoal-700">Google Reviewer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-charcoal-900/10 shadow-sm relative flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-charcoal-800 italic text-sm leading-relaxed mb-6">
+                            "We had the chicken/bacon/ranch pizza, which was delivered quickly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-charcoal-900/10">
+                        <div class="w-10 h-10 rounded-full bg-amberGold/20 text-wine flex items-center justify-center font-bold text-sm">
+                            M
+                        </div>
+                        <div>
+                            <div class="text-charcoal-900 text-sm font-bold">Berea Resident</div>
+                            <div class="text-xs text-charcoal-700">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-charcoal-900/10 shadow-sm relative flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-charcoal-800 italic text-sm leading-relaxed mb-6">
+                            "The bottom crust is crispy, the cheese gooey and the toppings flavorful."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-charcoal-900/10">
+                        <div class="w-10 h-10 rounded-full bg-olive/10 text-olive flex items-center justify-center font-bold text-sm">
+                            S
+                        </div>
+                        <div>
+                            <div class="text-charcoal-900 text-sm font-bold">Pizza Lover</div>
+                            <div class="text-xs text-charcoal-700">Facebook Reviewer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & MAPS SECTION -->
+    <section id="location" class="py-20 bg-oat border-t border-charcoal-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- HOURS & BUSINESS DETAILS -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-wine text-xs font-bold uppercase tracking-widest block mb-2">Find Us</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal-900 mb-4">Hours & Location</h2>
+                        <p class="text-charcoal-700 text-sm">
+                            Located at College Square in Berea, Kentucky. Convenient street parking and dine-in seating available.
+                        </p>
+                    </div>
+
+                    <!-- HOURS LIST -->
+                    <div class="bg-white p-6 rounded-2xl border border-charcoal-900/10 shadow-sm space-y-3">
+                        <div class="flex justify-between items-center text-sm pb-3 border-b border-charcoal-900/10">
+                            <span class="text-charcoal-900 font-bold">Monday – Sunday</span>
+                            <span class="text-wine font-bold">11:00 AM – 9:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2 pt-1 text-xs text-charcoal-700">
+                            <i class="fa-solid fa-clock text-amberGold"></i>
+                            <span>Average visit duration: 45 minutes to 1.5 hours</span>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT ACTION CARDS -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="tel:+18599864497" class="p-5 rounded-2xl bg-white border border-charcoal-900/10 hover:border-wine transition-all shadow-sm group flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-wine/10 text-wine flex items-center justify-center shrink-0 group-hover:bg-wine group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] text-charcoal-700 uppercase tracking-wider font-bold">Phone Order</div>
+                                <div class="text-charcoal-900 font-bold text-base mt-0.5">(859) 986-4497</div>
+                                <div class="text-xs text-wine font-semibold mt-1">Tap to call directly</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=108+Center+St,+Berea,+KY+40403" target="_blank" rel="noopener" class="p-5 rounded-2xl bg-white border border-charcoal-900/10 hover:border-olive transition-all shadow-sm group flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-olive/10 text-olive flex items-center justify-center shrink-0 group-hover:bg-olive group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-diamond-turn-right"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] text-charcoal-700 uppercase tracking-wider font-bold">Address</div>
+                                <div class="text-charcoal-900 font-bold text-sm mt-0.5">108 Center St</div>
+                                <div class="text-xs text-olive font-semibold mt-1">Open Directions Map</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EMBEDDED GOOGLE MAP WITH DIRECT DIRECTIONS LINK -->
+                <div class="bg-white p-3 rounded-3xl border border-charcoal-900/10 shadow-lg flex flex-col h-full">
+                    <div class="relative w-full h-[380px] rounded-2xl overflow-hidden bg-parchment">
+                        <iframe 
+                            title="Papa Leno's Restaurant Google Map"
+                            src="https://maps.google.com/maps?q=108%20Center%20St,%20Berea,%20KY%2040403&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mt-1 bg-oat/50 rounded-2xl">
+                        <div class="text-center sm:text-left">
+                            <div class="text-sm font-bold text-charcoal-900">Papa Leno's Restaurant</div>
+                            <div class="text-xs text-charcoal-700">108 Center St, Berea, KY 40403</div>
+                        </div>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=108+Center+St,+Berea,+KY+40403" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-olive hover:bg-olive-dark text-white font-bold text-xs uppercase tracking-wider shadow-sm transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-charcoal-900 text-gray-300 py-12 border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-wine flex items-center justify-center text-amberGold font-bold font-serif text-lg">P</div>
+                    <div>
+                        <span class="text-white font-serif font-bold text-lg block leading-none">Papa Leno's</span>
+                        <span class="text-[10px] text-amberGold font-medium tracking-widest uppercase">Berea, KY</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-gray-400">
+                    <a href="#about" class="hover:text-amberGold transition-colors">About</a>
+                    <a href="#menu" class="hover:text-amberGold transition-colors">Menu</a>
+                    <a href="#reviews" class="hover:text-amberGold transition-colors">Reviews</a>
+                    <a href="#location" class="hover:text-amberGold transition-colors">Hours & Location</a>
+                </div>
+
+                <div class="text-xs text-gray-400 text-center md:text-right">
+                    © <span id="year">2026</span> Papa Leno's Restaurant. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TABLE RESERVATION MODAL -->
+    <div id="modal-overlay" class="fixed inset-0 bg-charcoal-900/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white max-w-lg w-full rounded-3xl border border-charcoal-900/10 p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-charcoal-700 hover:text-wine p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h2 class="font-serif text-2xl font-bold text-charcoal-900 mb-1">Reserve a Table</h2>
+            <p class="text-xs text-charcoal-700 mb-6">Send a seating request. For immediate confirmation or large groups, call us directly.</p>
+
+            <form id="reservation-form" onsubmit="handleReservation(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Full Name</label>
+                    <input type="text" required placeholder="John Doe" class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Phone</label>
+                        <input type="tel" required placeholder="(859) 000-0000" class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Guests</label>
+                        <select class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine">
+                            <option>2 People</option>
+                            <option>3-4 People</option>
+                            <option>5-6 People</option>
+                            <option>7+ People</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Date</label>
+                        <input type="date" required class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Preferred Time</label>
+                        <input type="time" required class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-1">Special Notes</label>
+                    <textarea rows="2" placeholder="Dietary restrictions or seating requests..." class="w-full bg-oat border border-charcoal-900/15 rounded-xl px-3.5 py-2.5 text-sm text-charcoal-900 focus:outline-none focus:border-wine"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 bg-wine hover:bg-wine-dark text-white font-bold rounded-xl uppercase tracking-wider text-xs transition-colors shadow-md">
+                    Submit Reservation Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // FULL EXTRACTED MENU ITEMS
+        const rawMenu = [
+            // STARTERS
+            {
+                category: 'starters',
+                name: "Wings (Hot or Mild)",
+                desc: "A generous portion served hot or mild.",
+                price: "Four $6.99 | Eight $10.99",
+                signature: false
+            },
+            {
+                category: 'starters',
+                name: "Basket of Brew City Fries",
+                desc: "Beer battered fries made fresh to order.",
+                price: "$5.99",
+                signature: false
+            },
+            {
+                category: 'starters',
+                name: "Pizza Bread",
+                desc: "Crispy bread with cheese and pizza sauce base. Add pizza toppings .50 each.",
+                price: "$4.89",
+                signature: false
+            },
+            {
+                category: 'starters',
+                name: "Homemade Garlic Bread",
+                desc: "Freshly baked homemade bread with rich garlic butter.",
+                price: "$2.79",
+                signature: false
+            },
+            {
+                category: 'starters',
+                name: "Toasted Cheese Bread",
+                desc: "Homemade garlic bread melted with mozzarella cheese.",
+                price: "$4.49",
+                signature: false
+            },
+            {
+                category: 'starters',
+                name: "Chicken Tender Basket",
+                desc: "Four signature chicken tenders served with French fries and choice of honey mustard or BBQ sauce.",
+                price: "$8.99",
+                signature: false
+            },
+
+            // SOUPS & SALADS
+            {
+                category: 'soups-salads',
+                name: "Soup Du Jour",
+                desc: "Two delicious homemade soups that change daily. Ask your server!",
+                price: "Bowl $4.49",
+                signature: false
+            },
+            {
+                category: 'soups-salads',
+                name: "Our Hearty Meaty Chili",
+                desc: "Seasonal Item. Rich chili packed with flavor.",
+                price: "Bowl $5.49",
+                signature: true
+            },
+            {
+                category: 'soups-salads',
+                name: "Tossed Salad",
+                desc: "Fresh garden greens served with your choice of dressing.",
+                price: "$3.29",
+                signature: false
+            },
+            {
+                category: 'soups-salads',
+                name: "Grilled or Fried Chicken Salad",
+                desc: "All the good stuff, topped with choice of marinated grilled or hearty fried chicken, served with homemade garlic bread.",
+                price: "$9.99",
+                signature: false
+            },
+            {
+                category: 'soups-salads',
+                name: "Garden Salad",
+                desc: "Our largest salad packed with all the fresh veggies and cheese.",
+                price: "$6.99",
+                signature: false
+            },
+
+            // HOT SUBS
+            {
+                category: 'hot-subs',
+                name: "The Vegetarian Sub",
+                desc: "Fresh green peppers, mushrooms, onions, green & black olives topped with Provolone, lettuce, tomatoes & herb vinaigrette.",
+                price: "Whole $8.49 | Half $6.49",
+                signature: false
+            },
+            {
+                category: 'hot-subs',
+                name: "The Italian Sub",
+                desc: "Salami, capicola, Provolone, onions, banana peppers, lettuce, tomato and Italian dressing.",
+                price: "Whole $10.99 | Half $8.99",
+                signature: true
+            },
+            {
+                category: 'hot-subs',
+                name: "The Meatball Sub",
+                desc: "Made with our rich tomato sauce, Provolone and yummy meatballs.",
+                price: "Whole $10.49 | Half $8.49",
+                signature: false
+            },
+            {
+                category: 'hot-subs',
+                name: "The Stromboli Sub",
+                desc: "A chopped steak patty with tomato sauce and provolone cheese.",
+                price: "Whole $9.49 | Half $7.49",
+                signature: false
+            },
+            {
+                category: 'hot-subs',
+                name: "The Ham-N-Cheese Sub",
+                desc: "Ham, Provolone, lettuce, tomato and onions.",
+                price: "Whole $10.49 | Half $8.49",
+                signature: false
+            },
+            {
+                category: 'hot-subs',
+                name: "The Pizza Sub",
+                desc: "Choose three toppings of your choice melted on our scratch bread.",
+                price: "Whole $10.99 | Half $9.99",
+                signature: false
+            },
+            {
+                category: 'hot-subs',
+                name: "Chicken Salad (Cold)",
+                desc: "Pulled chicken, diced celery, spices on whole wheat with chips & dill spear.",
+                price: "$8.29",
+                signature: false
+            },
+
+            // OFF THE GRILL
+            {
+                category: 'grill',
+                name: "The Philly Steak Sub",
+                desc: "Choice sirloin with sautéed onions, peppers and Provolone cheese.",
+                price: "Whole $11.99 | Half $9.99",
+                signature: true
+            },
+            {
+                category: 'grill',
+                name: "Portabella Sandwich",
+                desc: "Portabella cap grilled & seasoned to perfection with Provolone, lettuce, tomato.",
+                price: "$8.99",
+                signature: false
+            },
+            {
+                category: 'grill',
+                name: "The Chicken Philly",
+                desc: "Chicken breast with sautéed onions, green peppers and Provolone cheese.",
+                price: "Whole $11.99 | Half $9.99",
+                signature: false
+            },
+            {
+                category: 'grill',
+                name: "Papa Burger",
+                desc: "1/3 lb of Certified Angus Beef specially seasoned with lettuce, tomato, onion. (Add Bacon $1.00 | Add Cheese $0.50)",
+                price: "$9.99",
+                signature: false
+            },
+            {
+                category: 'grill',
+                name: "Grilled Veggie Burger",
+                desc: "A vegetarian burger grilled and topped with lettuce and tomato.",
+                price: "$8.49",
+                signature: false
+            },
+
+            // FAMOUS PIZZA
+            {
+                category: 'pizza',
+                name: "The Mountaineer",
+                desc: "Pepperoni, Italian sausage, beef, black and green olives, mushrooms, onions, green and banana peppers.",
+                price: "10\" $15.99 | 14\" $17.99 | 16\" $20.99",
+                signature: true
+            },
+            {
+                category: 'pizza',
+                name: "Meats-N-Meats",
+                desc: "Loaded with pepperoni, Italian sausage, beef, ham and bacon.",
+                price: "10\" $14.99 | 14\" $17.99 | 16\" $20.99",
+                signature: true
+            },
+            {
+                category: 'pizza',
+                name: "Chicken, Bacon & Ranch Pizza",
+                desc: "Grilled chicken, crisp bacon, ranch dressing, and onions.",
+                price: "10\" $14.99 | 14\" $17.99 | 16\" $20.99",
+                signature: true
+            },
+            {
+                category: 'pizza',
+                name: "The Vegetarian Pizza",
+                desc: "Green and black olives, mushrooms, onions and green peppers.",
+                price: "10\" $14.99 | 14\" $16.99 | 16\" $19.99",
+                signature: false
+            },
+            {
+                category: 'pizza',
+                name: "The Barbeque Pizza",
+                desc: "Sweet tangy BBQ sauce, grilled chicken, onions, mushrooms and green peppers.",
+                price: "10\" $14.99 | 14\" $17.99 | 16\" $20.99",
+                signature: false
+            },
+            {
+                category: 'pizza',
+                name: "Cauliflower Crust 10\" (Gluten Free)",
+                desc: "Cheese $10.99 | Mountaineer $16.99 | Vegetarian $15.99 | BBQ $16.99 | Meats-N-Meats $15.99 | Chicken Bacon Ranch $16.99",
+                price: "From $10.99",
+                signature: false
+            },
+            {
+                category: 'pizza',
+                name: "Build Your Own Pizza",
+                desc: "Start with basic Cheese Pizza. Add toppings (Sausage, Beef, Chicken, Ham, Bacon, Jalapeños, Artichokes, Sun-Dried Tomatoes, etc.)",
+                price: "10\" $9.99 | 14\" $11.99 | 16\" $13.99",
+                signature: false
+            },
+            {
+                category: 'pizza',
+                name: "The Big Slice",
+                desc: "A giant slice of Papa Leno's pizza with up to 5 toppings of your choice.",
+                price: "2 Toppings $6.99 | 3-5 Toppings $7.99",
+                signature: false
+            },
+
+            // PASTA
+            {
+                category: 'pasta',
+                name: "Mama's Meat Lasagna",
+                desc: "Not Papa's but Mama's own meat lasagna recipe. Served with homemade garlic bread.",
+                price: "$11.99",
+                signature: true
+            },
+            {
+                category: 'pasta',
+                name: "Manicotti",
+                desc: "Blend of Italian cheeses stuffed inside a pasta roll baked in rich tomato sauce & mozzarella.",
+                price: "$11.79",
+                signature: true
+            },
+            {
+                category: 'pasta',
+                name: "Oven Baked Spaghetti",
+                desc: "Spaghetti with choice of meat sauce or marinara smothered with special blend mozzarella baked in pizza oven.",
+                price: "Baked Marinara $11.99 | Baked Meat Sauce $12.99",
+                signature: true
+            },
+            {
+                category: 'pasta',
+                name: "Grilled Chicken (or Shrimp) & Veggie Pasta",
+                desc: "Spaghetti, olives, peppers, onions, mushrooms in light garlic butter sauce & olive oil.",
+                price: "Chicken $11.99 | Shrimp $12.99",
+                signature: true
+            },
+            {
+                category: 'pasta',
+                name: "Fettuccine Alfredo",
+                desc: "Imported fettuccine noodles in rich creamy alfredo sauce.",
+                price: "$10.99 (Add Chicken +$1.50 | Shrimp +$2.00)",
+                signature: false
+            },
+            {
+                category: 'pasta',
+                name: "Chicken Parmesan",
+                desc: "Our old family recipe.",
+                price: "$12.99",
+                signature: false
+            },
+            {
+                category: 'pasta',
+                name: "Spaghetti with Marinara or Meat Sauce",
+                desc: "Spaghetti served with our authentic marinara or meat sauce.",
+                price: "Marinara $9.99 | Meat Sauce $10.99",
+                signature: false
+            },
+
+            // KIDS MENU
+            {
+                category: 'kids',
+                name: "Kids Spaghetti",
+                desc: "12 & under. Served with breadstick and free drink. Choice of meat sauce, marinara, meatballs or plain.",
+                price: "$6.99",
+                signature: false
+            },
+            {
+                category: 'kids',
+                name: "Kids Alfredo",
+                desc: "Creamy alfredo pasta with free drink. Add chicken $1.50 or shrimp $2.00.",
+                price: "$7.99",
+                signature: false
+            },
+            {
+                category: 'kids',
+                name: "Kids Chicken Strips",
+                desc: "3 breaded tenders served with fries, chips or apples & free drink.",
+                price: "$7.99",
+                signature: false
+            },
+            {
+                category: 'kids',
+                name: "Kids Slice of Pizza",
+                desc: "Double slice of pizza with 2 favorite toppings & free drink.",
+                price: "$6.99",
+                signature: false
+            },
+
+            // DESSERTS & DRINKS
+            {
+                category: 'desserts-drinks',
+                name: "Italian Desserts",
+                desc: "Cake, Cheesecake, Tiramisu, or The Big Cookie.",
+                price: "Ask Server for Daily Specials",
+                signature: false
+            },
+            {
+                category: 'desserts-drinks',
+                name: "Beverages",
+                desc: "Soft Drinks, Iced Tea, Hot Tea, Regular/Decaf Coffee, Beer & Wine Selection.",
+                price: "Varied Prices",
+                signature: false
+            }
+        ];
+
+        let activeCategory = 'all';
+
+        // Render Menu Items
+        function renderMenu() {
+            const container = document.getElementById('menu-container');
+            const noResults = document.getElementById('no-results');
+            const query = document.getElementById('menu-search').value.toLowerCase().trim();
+
+            const filtered = rawMenu.filter(item => {
+                const matchesCategory = activeCategory === 'all' || item.category === activeCategory;
+                const matchesSearch = item.name.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query);
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+            container.innerHTML = filtered.map(item => `
+                <div class="bg-white p-5 rounded-2xl border border-charcoal-900/10 hover:border-wine/40 transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                    <div>
+                        <div class="flex items-start justify-between gap-3 mb-2">
+                            <h3 class="font-serif font-bold text-base sm:text-lg text-charcoal-900 group-hover:text-wine transition-colors flex items-center gap-2">
+                                ${item.name}
+                                ${item.signature ? `<span class="w-5 h-5 rounded-full signature-badge text-white text-[10px] font-bold flex items-center justify-center shrink-0" title="Papa Leno's Signature Dish">P</span>` : ''}
+                            </h3>
+                            <span class="text-xs font-bold text-wine bg-wine/10 px-2.5 py-1 rounded-md border border-wine/20 whitespace-nowrap">
+                                ${item.price}
+                            </span>
+                        </div>
+                        <p class="text-xs text-charcoal-700 leading-relaxed font-normal">${item.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Category Filter Function
+        function filterCategory(cat) {
+            activeCategory = cat;
+            document.querySelectorAll('#category-tabs .tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('bg-white', 'text-charcoal-800');
+            });
+            event.target.classList.add('active');
+            renderMenu();
+        }
+
+        // Reset Search
+        function resetMenuSearch() {
+            document.getElementById('menu-search').value = '';
+            filterCategory('all');
+        }
+
+        // Check Open/Closed Status dynamically
+        function checkBusinessHours() {
+            const now = new Date();
+            const currentHour = now.getHours(); // 0 - 23
+            const dot = document.getElementById('status-dot');
+            const statusText = document.getElementById('status-text');
+
+            // Open 11:00 AM (11) to 9:00 PM (21)
+            if (currentHour >= 11 && currentHour < 21) {
+                dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse";
+                statusText.textContent = "OPEN NOW";
+                statusText.className = "text-xs font-bold tracking-wide uppercase text-emerald-300";
+            } else {
+                dot.className = "w-2.5 h-2.5 rounded-full bg-rose-400";
+                statusText.textContent = "CLOSED NOW";
+                statusText.className = "text-xs font-bold tracking-wide uppercase text-rose-300";
+            }
+        }
+
+        // Modal Handlers
+        function openModal() {
+            document.getElementById('modal-overlay').classList.remove('hidden');
+            document.getElementById('modal-overlay').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.add('hidden');
+            document.getElementById('modal-overlay').classList.remove('flex');
+        }
+
+        function handleReservation(e) {
+            e.preventDefault();
+            alert('Thank you! Your seating request has been submitted. Papa Leno\'s staff will confirm your reservation shortly.');
+            closeModal();
+            e.target.reset();
+        }
+
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Event Listeners
+        document.getElementById('menu-search').addEventListener('input', renderMenu);
+
+        // Initial Initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            renderMenu();
+            checkBusinessHours();
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
